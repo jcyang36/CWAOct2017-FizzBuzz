@@ -12,6 +12,11 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         System.out.println("What is the ending number? ");
         int n=scan.nextInt();
+        while(n<1){
+            System.out.println("Enter a number greater than 1: ");
+            n = scan.nextInt();
+
+        }
 
         System.out.println("What is the number that will be used to find multiples? ");
          int modulus = scan.nextInt();
